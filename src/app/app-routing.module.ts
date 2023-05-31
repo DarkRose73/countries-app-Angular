@@ -19,6 +19,12 @@ const routes: Routes = [
     path: 'contact',
     component: ContactPageComponent,
   },
+  // Hacer llamado a un modulo de rutas con hijos
+  {
+    path: 'countries',
+    loadChildren: () =>
+      import('./countries/countries.module').then((m) => m.CountriesModule),
+  },
   // Hacer redireccion
   {
     // Ruta comodin
