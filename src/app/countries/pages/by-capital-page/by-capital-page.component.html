@@ -5,7 +5,10 @@
   <div class="col">
     <!-- Searchbox -->
 
-    <shared-search-box placeholder="Buscar por capital"></shared-search-box>
+    <shared-search-box
+      (onValue)="searchByCapital($event)"
+      placeholder="Buscar por capital"
+    ></shared-search-box>
   </div>
 </div>
 
