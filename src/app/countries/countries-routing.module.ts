@@ -23,6 +23,11 @@ const routes: Routes = [
     path: 'by/:id',
     component: CountryPageComponent,
   },
+  {
+    // Ruta comodin
+    path: '**',
+    redirectTo: 'by-capital',
+  },
 ];
 
 @NgModule({
